@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   css: [
-    '~/assets/css/main.css'
+    '~/assets/css/main.css',
+    'boxicons/css/boxicons.min.css'
   ],
 
   postcss: {

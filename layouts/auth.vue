@@ -1,8 +1,6 @@
 <template>
-<div class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('~/assets/images/green-gradient.png')]" >
+<div class="relative min-h-screen w-full flex overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('~/assets/images/armchair-green-living-room-with-copy-space.jpg')]" >
     <!-- Main Content Slot (Login/Register Forms) -->
-    <main class="relative z-10 w-full max-w-md p-6">
-      <slot />
-    </main>
+    <slot />
   </div>
 </template>
