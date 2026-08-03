@@ -1,1 +1,18 @@
-{}
+{
+    "main_title":{
+        "dashboard":"Dashboard",
+        "property": "Property",
+        "billing": "Billing",
+        "report": "Report",
+        "tenant": "Tenant",
+        "schedule": "Schedule",
+        "comment": "Comment",
+        "muted":{
+            "general":"General",
+            "other": "Other"
+        }
+    },
+    "title_name":{
+        "property": "Property"
+    }
+}

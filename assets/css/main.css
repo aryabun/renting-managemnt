@@ -1,30 +1,41 @@
 /* #473443; #0e3640; #d7c297 */
-/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Hanuman:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
     /* background-color: ; */
-    font-family: "Quicksand", sans-serif;
+    --font-heading: "Castoro Titling", serif;
+    --font-body: "Quicksand", sans-serif;
     --teal: #103d44;
     background-color: rgb(254, 254, 251);
 }
+
+.lang-km {
+    --font-heading: "Hanuman", serif;
+    --font-body: "Kantumruy Pro", sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: "Castoro Titling", serif;
+    font-family: var(--font-heading);
 }
-a{
+body{
+    font-family: var(--font-body);
+}
+a {
     @apply text-[var(--teal)] no-underline hover:underline;
 }
-header{
+
+header {
     background: var(--teal);
     color: white;
 }
-.bx{
+
+.bx {
     font-size: 24px;
 }

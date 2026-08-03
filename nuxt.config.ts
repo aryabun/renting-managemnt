@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   i18n: {
     strategy: "no_prefix",
     defaultLocale: "km",
-    langDir: "locales/",
+    langDir: "locales",
     locales: [
       {
         code: 'km',

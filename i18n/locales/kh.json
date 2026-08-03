@@ -1,1 +1,18 @@
-{}
+{
+    "main_title": {
+        "dashboard": "ទិដ្ឋភាពទូទៅ",
+        "property": "បញ្ជីអចលនទ្រព្យ",
+        "billing": "វិក័យប័ត្រ",
+        "report": "របាយការណ៍",
+        "tenant": "ភ្ញៀវជួល",
+        "schedule": "គម្រោងពេល",
+        "comment": "មតិចំណាំ",
+        "muted": {
+            "general": "ទូទៅ",
+            "other": "ផ្សេងៗ"
+        }
+    },
+    "title_name": {
+        "property": "បញ្ជីអចលនទ្រព្យ"
+    }
+}

@@ -1,14 +1,14 @@
 <script setup lang="ts">
-const breadCrum = {
-    current: 'Tenants',
-    list: [
-        {
-            title: 'Tenants',
-            link: ''
-        }
-    ]
-};
-
+const { t } = useI18n();
+const breadCrum = computed(() => ({
+  current: t("main_title.tenant"),
+  list: [
+    {
+      title: t("main_title.tenant"),
+      link: ""
+    }
+  ]
+}))
 </script>
 <template>
     <BreadCrumbCompoent :prop-data="breadCrum"/>

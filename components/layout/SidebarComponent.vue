@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+const { t } = useI18n();
 const isCollapsed = ref<boolean>(false);
 
 const toggleSidebar = (): void => {
@@ -8,58 +8,58 @@ const toggleSidebar = (): void => {
 
 };
 
-const sidebarItems = [
+const sidebarItems = computed(() => [
     {
-        "title": "General",
+        "title": t("main_title.muted.general"),
         "sub": [
             {
                 "icon": "bx bxs-dashboard",
-                "title": "Dashboard",
+                "title": t("main_title.dashboard"),
                 "path": "/"
             }
         ]
     },
     {
-        "title": "Property",
+        "title": t("main_title.property"),
         "sub": [
             {
                 "icon": "bx bx-building-house",
-                "title": "All Properties",
+                "title": t("main_title.property"),
                 "path": "/property"
             },
             {
                 "icon": "bx bx-receipt",
-                "title": "Issue Billing",
+                "title": t("main_title.billing"),
                 "path": "/billing"
             },
             {
                 "icon": "bx bxs-report",
-                "title": "Report",
+                "title": t("main_title.report"),
                 "path": "/report"
             },
         ]
     },
     {
-        "title": "Other",
+        "title": t("main_title.muted.other"),
         "sub": [
             {
                 "icon": "bx bxs-user-badge",
-                "title": "All Tenants",
+                "title": t("main_title.tenant"),
                 "path": "/tenant"
             },
             {
                 "icon": "bx bx-calendar",
-                "title": "Schedule",
+                "title": t("main_title.schedule"),
                 "path": "/schedule"
             },
             {
                 "icon": "bx bx-error",
-                "title": "Comment",
+                "title": t("main_title.comment"),
                 "path": "/comment"
             },
         ]
     },
-]
+]);
 </script>
 <template>
     <aside :class="['transition-all duration-300 ease-in-out',
@@ -78,7 +78,7 @@ const sidebarItems = [
                 </button>
             </div>
             <div class="flex flex-col py-2 text-slate-800" v-for="(item, i) in sidebarItems" :key="i">
-                <p  class="pb-2" :class="[
+                <p class="pb-2" :class="[
                     isCollapsed ? 'collapse' : 'text-slate-500 visible'
                 ]">
                     {{ item.title }}

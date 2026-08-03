@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-const { locale, locales } = useI18n({ useScope: "global" });
+const { locale, locales, setLocale } = useI18n({ useScope: "global" });
 
 interface FlagImage {
     src: string,
@@ -25,6 +25,9 @@ const flagMap: Record<string, FlagImage> = {
         alt: "United States",
     },
 };
+watch(locale, (value) => {
+    setLocale(value)
+})
 </script>
 <template>
     <el-radio-group v-model="locale" size="small" fill="#207e8d">
