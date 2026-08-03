@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const breadCrum = {
-    current: 'Dashboard',
+    current: 'Tenants',
     list: [
         {
-            title: 'Dashboard',
+            title: 'Tenants',
             link: ''
         }
     ]

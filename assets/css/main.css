@@ -11,7 +11,6 @@
     --teal: #103d44;
     background-color: rgb(254, 254, 251);
 }
-
 h1,
 h2,
 h3,
@@ -20,9 +19,12 @@ h5 {
     font-family: "Castoro Titling", serif;
 }
 a{
-    @apply text-amber-100 no-underline hover:underline;
+    @apply text-[var(--teal)] no-underline hover:underline;
 }
 header{
     background: var(--teal);
     color: white;
+}
+.bx{
+    font-size: 24px;
 }

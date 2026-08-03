@@ -71,3 +71,8 @@ definePageMeta({
         </div>
     </CardComponent>
 </template>
+<style scoped>
+a{
+    @apply text-amber-100 no-underline hover:underline !important;
+}
+</style>

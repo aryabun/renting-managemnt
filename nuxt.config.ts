@@ -15,5 +15,30 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@element-plus/nuxt',
+    '@nuxtjs/i18n',
+  ],
+  i18n: {
+    strategy: "no_prefix",
+    defaultLocale: "km",
+    langDir: "locales/",
+    locales: [
+      {
+        code: 'km',
+        name: 'ភាសាខ្មែរ',
+        file: 'kh.json',
+      },
+      {
+        code: 'en',
+        name: 'English(US)',
+        file: 'en.json',
+      }
+    ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: true
+    },
+  },
 })
